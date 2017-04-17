@@ -1,0 +1,20 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+	<input id="searchAddress" type="text" placeholder="Search an Address">
+	<input type="submit" onclick="searchAddress()">
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+		
+		var socket = io.connect('http://localhost:3000');
+
+		var searchAddress = function () {
+			socket.emit('searchAddress', { address: document.getElementById('searchAddress').value})
+		}
+	</script>
+</body>
