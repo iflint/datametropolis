@@ -1,17 +1,18 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="/main.css">
 </head>
 
 <body>
 	
-	<div id="logo"><a href="/"><h1><span class="teal">Data</span>Metropolis</h1><a></div>
+	<div id="logo"><a href="/"><h1><span class="teal">Data</span>Metropolis</h1></a></div>
 
 	<div id="mapid"></div>
 
 	<div class="contentAlt">
 		<div id="title"></div>
+		<a href="/maps">View Another Area</a>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -33,7 +34,7 @@
 		var mapZoom = districts[secondLast].zoom;
 		var dataSource = '/plutoDistricts/pluto' + secondLast + '.geojson';
 
-		$('#title').append('<h1>' + districts[secondLast].borough + ' District: ' + districts[secondLast].district);
+		$('#title').append('<h1>' + districts[secondLast].borough + ' District: ' + districts[secondLast].district + '</h1>');
 
 
 		// if (secondLast.toString()[0] == '1') {
