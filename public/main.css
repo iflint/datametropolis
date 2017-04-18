@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Rubik');
+body {
+	margin: 0;
+	background: #242424;
+	font-family: 'Rubik';
+}
+a {
+	text-decoration: inherit;
+	color: inherit;
+}
+.teal {
+	color: teal;
+}
+.headerImg {
+	width: 100%;
+	height: 40em;
+	background: url(midtown.png) no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 0;
+}
+.headerText {
+	position: relative;
+	top: -25em;
+	max-width: 40em;
+	margin: auto;
+	text-align: center;
+	color: white;
+	z-index: 10;
+	border-bottom: solid .2em white;
+}
+.headerText h1 {
+	font-family: 'Bungee';
+	font-size: 2em;
+	margin-bottom: 0;
+}
+.headerText h2 {
+	font-family: 'Bungee Hairline';
+	margin-top: 0;
+}
+
+.content {
+	margin: auto;
+	width: 90%;
+	max-width: 40em;
+	background: white;
+	margin-top: -20em;
+	z-index: 500;
+}
+.leftSide {
+	width: 8em;
+	display: inline-block;
+}
+.rightSide {
+	display: inline-block;
+	vertical-align: top;
+	width: 30em;
+}
+.squareMenu {
+	width: 100%;
+	height: 8em;
+	line-height: 8em;
+	text-align: center;
+	font-family: 'Bungee';
+}
+.squareMenu:hover {
+	color: teal;
+}
+.mapMenu {
+	background: #363636;
+	color: white;
+}
+.blogMenu {
+	color: white;
+	background: gray;
+}
+.dataMenu {
+	background: lightgray;
+	color: #363636;
+}
+.dateLine {
+	margin: 2em;
+}
+.post {
+	margin: 2em;
+	background: lightgray;
+}
+.postContain {
+	padding: 1em;
+}
+.postImg {
+	width: 100%;
+}
+.postTitle {
+	font-family: 'Bungee';
+	line-height: 1em;
+}
+.postTitle a:hover {
+	color: teal;
+}
+.postContent {
+	margin-top: .8em;
+}
+.postContent a:hover {
+	color: teal;
+}
+.footer {
+	font-family: 'Bungee Hairline';
+	color: white;
+	margin: auto;
+	width: 90%;
+	max-width: 40em;
+	margin-top: 5em;
+	height: 15em;
+	border-top: solid .2em white;
+	padding-top: 2em;
+	text-align: center;
+}
+
+
+
+
+#logo {
+	font-family: 'Bungee';
+	text-align: center;
+	color: white;
+}
+#logo h1 {
+	margin-bottom: 0;
+}
+#mapid {
+	width: 100%;
+	height: 50%;
+	z-index: 5;
+}
+.contentAlt {
+	color: white;
+	margin: auto;
+	width: 90%;
+	max-width: 40em;
+	z-index: 500;
+}
+#title {
+	margin-top: 2em;
+}
+.boroughTitle {
+	color: teal;
+	font-family: 'Bungee Hairline';
+}
+.firstListLine {
+	border-top: solid 1px white;
+}
+.listLine {
+	border-bottom: solid 1px white;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+.listLine h3 {
+	color: teal;
+	font-family: 'Bungee Hairline';
+	line-height: 1em;
+	margin: 0;
+}
+
+@media (max-width: 700px) {
+	.headerText {
+		border: none;
+	}
+	.leftside {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.rightSide {
+		width: 100%;
+	}
+	.squareMenu {
+		display: inline-block;
+		width: 32%
+	}
+}
