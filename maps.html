@@ -12,8 +12,10 @@
 
 	<div class="contentAlt">
 		<div id="title"></div>
-		<a href="/maps">View Another Area</a>
+		<div id="moreData">More Data</div>
 	</div>
+
+	<div class="footer"> - Email - </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -34,7 +36,13 @@
 		var mapZoom = districts[secondLast].zoom;
 		var dataSource = '/plutoDistricts/pluto' + secondLast + '.geojson';
 
-		$('#title').append('<h1>' + districts[secondLast].borough + ' District: ' + districts[secondLast].district + '</h1>');
+		$('#title').append('<h1>' + districts[secondLast].borough + ' District: ' + districts[secondLast].district + '</h1><a href="/maps">change district</a><h2>Data Selection: ' + codes[lastParam] + '<h2>');
+
+		Object.keys(codes).forEach(function(key) {
+		    $('#moreData').after('<a class="moreDataItems" href="/maps/' + secondLast + '/' + key + '">' + codes[key] + '</a>')
+		});
+
+		
 
 
 		// if (secondLast.toString()[0] == '1') {

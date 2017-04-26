@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Rubik');
+@import url('https://fonts.googleapis.com/css?family=Rubik|Sail|Flamenco:300');
 body {
 	margin: 0;
 	background: #242424;
@@ -26,7 +26,7 @@ a:hover {
 }
 .headerText {
 	position: relative;
-	top: -25em;
+	top: -30em;
 	max-width: 40em;
 	margin: auto;
 	text-align: center;
@@ -35,20 +35,21 @@ a:hover {
 	border-bottom: solid .2em white;
 }
 .headerText h1 {
-	font-family: 'Bungee';
+	font-family: 'Sail';
 	font-size: 3em;
-	margin-bottom: 0;
+	margin-bottom: .3em;
 }
 .headerText h2 {
-	font-family: 'Bungee Hairline';
+	font-family: 'Flamenco';
 	margin-top: 0;
+	line-height: 1em;
 }
 
 .content {
 	margin: auto;
 	width: 90%;
 	max-width: 40em;
-	background: white;
+	background: transparent;
 	margin-top: -20em;
 	z-index: 500;
 	padding-bottom: 4em;
@@ -58,16 +59,18 @@ a:hover {
 	display: inline-block;
 }
 .rightSide {
+	background: white;
 	display: inline-block;
 	vertical-align: top;
 	width: 30em;
 }
 .squareMenu {
 	width: 100%;
-	height: 8em;
-	line-height: 8em;
+	height: 5em;
+	line-height: 5em;
+	font-size: 1.2em;
 	text-align: center;
-	font-family: 'Bungee';
+	font-family: 'Sail';
 }
 .squareMenu:hover {
 	color: teal;
@@ -82,7 +85,6 @@ a:hover {
 }
 .dataMenu {
 	background: lightgray;
-	color: #363636;
 }
 .dateLine {
 	margin: 2em;
@@ -98,14 +100,14 @@ a:hover {
 	width: 100%;
 }
 .postTitle {
-	font-family: 'Bungee';
-	line-height: 1em;
+	font-size: 1.2em;
+	text-decoration: underline;
 }
 .postContent {
 	margin-top: .8em;
 }
 .footer {
-	font-family: 'Bungee Hairline';
+	font-family: 'Flamenco';
 	color: white;
 	margin: auto;
 	width: 90%;
@@ -121,9 +123,13 @@ a:hover {
 
 
 #logo {
-	font-family: 'Bungee';
+	font-family: 'Sail';
 	text-align: center;
 	color: white;
+	position: fixed;
+	background: #242424;
+	width: 100%;
+	z-index: 9000;
 }
 #logo h1 {
 	margin-bottom: 0;
@@ -140,12 +146,27 @@ a:hover {
 	max-width: 40em;
 	z-index: 500;
 }
+#moreData {
+	color: teal;
+	font-size: 1.2em;
+}
+.moreDataItems {
+	display: block;
+	margin-top: .2em;
+}
 #title {
 	margin-top: 2em;
 }
+#title h1 {
+	display: inline-block;
+}
+#title a {
+	color: teal;
+	margin-left: 1em;
+}
 .boroughTitle {
 	color: teal;
-	font-family: 'Bungee Hairline';
+	font-family: 'Flamenco';
 }
 .listLine {
 	border-bottom: solid 1px white;
@@ -154,8 +175,7 @@ a:hover {
 }
 .listLine h3 {
 	color: teal;
-	font-family: 'Bungee Hairline';
-	line-height: 1em;
+	font-family: 'Flamenco';
 	margin: 0;
 }
 
@@ -171,6 +191,10 @@ a:hover {
 		width: 100%;
 		text-align: center;
 	}
+	.squareMenu {
+		height: 3em;
+		line-height: 3em;
+	}
 	.rightSide {
 		width: 100%;
 	}
@@ -178,4 +202,12 @@ a:hover {
 		display: inline-block;
 		width: 32%
 	}
+}
+
+
+
+.market {
+	height: 50px;
+	width: 50px;
+	background: white;
 }
