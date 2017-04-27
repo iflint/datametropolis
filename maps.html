@@ -36,7 +36,7 @@
 		var mapZoom = districts[secondLast].zoom;
 		var dataSource = '/plutoDistricts/pluto' + secondLast + '.geojson';
 
-		$('#title').append('<h1>' + districts[secondLast].borough + ' District: ' + districts[secondLast].district + '</h1><a href="/maps">change district</a><h2>Data Selection: ' + codes[lastParam] + '<h2>');
+		$('#title').append('<h1>' + districts[secondLast].borough + ' District: ' + districts[secondLast].district + '</h1><a href="/maps#featured">change district</a><h2>Data Selection: ' + codes[lastParam] + '<h2>');
 
 		Object.keys(codes).forEach(function(key) {
 		    $('#moreData').after('<a class="moreDataItems" href="/maps/' + secondLast + '/' + key + '">' + codes[key] + '</a>')
