@@ -1,44 +1,268 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="/main.css">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Rubik|Sail');
+
+
+
+
+		.black {
+			color: black;
+		}
+		.white {
+			color: white;
+		}
+		.centered {
+			text-align: center;
+		}
+		.subscript {
+			font-size: .7em;
+			color: red;
+		}
+
+
+
+		body {
+			margin: 0;
+			background: black;
+			color: white;
+			font-family: 'Rubik';
+		}
+		h1 {
+			font-family: 'Sail';
+		}
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+		.bar {
+			width: 100%;
+			position: relative;
+			padding-top: 5em;
+			padding-bottom: 5em;
+		}
+		.topImage {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			background: url('nycOutline.png') no-repeat center center fixed;
+			background-size: cover;
+			z-index: -1;
+			opacity: 0.2;
+		}
+		.topTitle {
+			font-size: 2.5em;
+			margin-top: 0;
+		}
+		.topSubtitle {
+			text-align: center;
+			margin-top: 10em;
+			color: #16a085;
+		}
+		.topExplore {
+			margin-top: 10em;
+		}
+		.centerColumn {
+			z-index: 10;
+			width: 90%;
+			max-width: 1200px;
+			margin: auto;
+		}
+		.infoBox {
+			width: 70%;
+			margin: auto;
+			border-left: solid .1em #16a085;
+			border-right: solid .1em #16a085;
+			padding: 1.5em;
+			box-sizing: border-box;
+			text-align: center;
+		}
+		.sideBox {
+			margin-top: 2em;
+			border: solid .1em #16a085;
+			color: #16a085;
+			background: transparent;
+			padding: 1em;
+			width: 15em;
+			box-sizing: border-box;
+		}
+		.sideBox:hover {
+			background: #16a085;
+			color: black;
+		}
+		.dataSources {
+			color: black;
+			background: #16a085;
+		}
+		.products {
+			background: white;
+			color: black;
+		}
+		.contact {
+			background: transparent;
+		}
+		.cardRow {
+			text-align: center;
+		}
+		.card {
+			margin-top: 2em;
+			display: inline-block;
+			vertical-align: top;
+			width: 25%;
+			min-height: 20em;
+			text-align: left;
+			padding: 1em;
+			box-sizing: border-box;
+			overflow-x: hidden;
+		}
+		.free {
+			border: solid .1em;
+		}
+		.pro {
+			border: solid .1em;
+			background: #16a085;
+		}
+		.pro h2 {
+			color: white;
+		}
+		.custom {
+			border: solid .1em;
+			background: black;
+			color: white;
+		}
+		.custom h2 {
+			color: #16a085;
+		}
+		.pricingLine {
+			border-bottom: solid .1em;
+			padding-top: .5em;
+			padding-bottom: .5em;
+		}
+		.footer {
+			border-top: solid .1em #16a085;
+			padding-top: 2em;
+		}
+
+
+
+		@media (max-width: 600px) {
+			body {
+				font-size: .85em;
+			}
+			.bar {
+				padding-top: 2em;
+				padding-bottom: 2em;
+			}
+			.topTitle {
+				margin-top: .2em;
+			}
+			.topSubtitle {
+				margin-top: 2em;
+			}
+			.topExplore {
+				margin-top: 2em;
+			}
+			.infoBox {
+				width: 90%;
+			}
+			.sideBox {
+				margin-top: 1em;
+				width: 100%;
+				text-align: center;
+			}
+			.card {
+				display: block;
+				width: 100%;
+
+			}
+		}
+
+
+	</style>
 </head>
 
-
 <body>
+
+		<div class="topImage"></div>
+		<div class="bar">
+			<div class="centerColumn">
+				<h1 class="topTitle">Data Metropolis</h1>
+				<h2 class="topSubtitle">Intelligent Real Estate Analysis</h2>
+				<div class="infoBox">Data Metropolis is a machine learning powered tool for multivariate analysis of New York City's real estate market. By combining traditional real estate market indicators with physical sensor networks and new computing techniques, we provide an innovative, fundamentally driven pricing model for New York properties.</div>
+
+				<h2 class="topExplore">Explore the Data</h2>
+				<div class="sideBox">
+					Search Address
+					<span class="subscript">Coming Soon</span>
+				</div>
+				<a href="/maps"><div class="sideBox">
+					Neighborhoods
+					<span class="subscript">Beta</span>
+				</div></a>
+			</div>
+		</div>
+
+		<div class="bar dataSources">
+			<div class="centerColumn">
+				<h2>Our Clients</h2>
+				<div class="cardRow">
+					<div class="card">
+						<h2 class="cardTitle">Investors</h2>
+						<div class="cardInfo">Gain an edge over the market by utilizing Data Metropolis's unique set of analytical tools. We provide price estimates, neighborhood comps and detailed property attributes to allow investors to make the most educated decisions possible.</div>
+					</div>
+					<div class="card">
+						<h2 class="cardTitle">Developers</h2>
+						<div class="cardInfo">Use advanced data analytics to identify undervalued future development sites. Data Metropolis collects a rich set of neighborhood data such as traffic patterns, transit times and customer density throughout the city that can aid in identifying suitable expansion locations.</div>
+					</div>
+					<div class="card">
+						<h2 class="cardTitle">Agents</h2>
+						<div class="cardInfo">Have a deep understanding of neighborhood trends with Data Metropolis's supply, demand and pricing estimates. We provide tools that can help price and market properties accurately and effectively.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bar products">
+			<div class="centerColumn">
+			<h2 class="black">Products</h2>
+				<div class="cardRow">
+					<div class="card free">
+						<h2 class="cardTitle">Free</h2>
+						<div class="pricingLine">Data Visualizations</div>
+						<div class="pricingLine">Neighborhood Samples</div>
+						<div class="pricingLine">Basic Property Attributes</div>
+						<div class="pricingLine">Data Visualizations</div>
+					</div>
+					<div class="card pro">
+						<h2 class="cardTitle">Business</h2>
+						<div class="pricingLine">Price Estimates</div>
+						<div class="pricingLine">Full Neighborhood Data</div>
+						<div class="pricingLine">Advanced Property Attributes</div>
+						<div class="pricingLine">Proprietary Transit Index</div>
+						<h2>$399 / month</h2>
+					</div>
+					<div class="card custom">
+						<h2 class="cardTitle">Custom</h2>
+						<div class="pricingLine">Data Collection</div>
+						<div class="pricingLine">Application Development</div>
+						<div class="pricingLine">Consulting Services</div>
+						<div class="pricingLine">Educational Resources</div>
+						<h2>Contact Us</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bar contact">
+			<div class="centerColumn">
+				<div class="footer">
+					info@datametropolis.com<br>
+					Based in Queens NY<br>
+				</div>
+			</div>
+		</div>
+
 	
-	<div class="headerImg"></div>
-
-	<div class="headerText">
-		<h1><span class="teal">Data</span>Metropolis</h1>
-		<h2>Data Driven Analysis of New York City</h2>
-	</div>
-
-	<div class="content">
-		
-		<div class="leftSide">
-			<a href="/maps"><div class="squareMenu mapMenu">Maps</div></a>
-			<a href="/blog"><div class="squareMenu blogMenu">Blog</div></a>
-			<a href="/data"><div class="squareMenu dataMenu">Data</div></a>
-		</div>
-		<div class="rightSide">
-
-			<div class="post">
-				<div class="postContain">
-					<dix class="postTitle">Contact Us</dix>
-					<div class="postContent">- Email -</div>
-				</div>
-			</div>
-			<div class="dateLine">April 17, 2017</div>
-			<div class="post">
-				<img src="midtown.png" class="postImg">
-				<div class="postContain">
-					<div class="postTitle"><a href="/maps/105/assesstot">Map: Assessed Value in Midtown</a></div>
-					<div class="postContent">Tax assessment values of buildings in Midtown Manhattan. Keep in mind, large buildings are assessed at 45% of their value while small buildings are only assessed at 6%, so the results can look a bit distorted from actual value.</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="footer"> - Email - </div>
-
+	
+	
 </body>

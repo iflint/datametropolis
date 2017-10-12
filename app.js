@@ -85,14 +85,6 @@ app.get('/admin', function (req, res) {
   res.sendFile(__dirname + '/admin.html')
 });
 
-app.get('/blog', function (req, res) {
-	res.sendFile(__dirname + '/blog.html')
-});
-
-app.get('/data', function (req, res) {
-	res.sendFile(__dirname + '/data.html')
-});
-
 app.get('/maps', function (req, res) {
 	res.sendFile(__dirname + '/mapMenu.html')
 });

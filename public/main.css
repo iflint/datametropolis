@@ -9,10 +9,10 @@ a {
 	color: inherit;
 }
 a:hover {
-	color: teal;
+	color: #16a085;
 }
 .teal {
-	color: teal;
+	color: #16a085;
 }
 .headerImg {
 	width: 100%;
@@ -73,7 +73,7 @@ a:hover {
 	font-family: 'Sail';
 }
 .squareMenu:hover {
-	color: teal;
+	color: #16a085;
 }
 .mapMenu {
 	background: #363636;
@@ -147,7 +147,7 @@ a:hover {
 	z-index: 500;
 }
 #moreData {
-	color: teal;
+	color: #16a085;
 	font-size: 1.2em;
 }
 .moreDataItems {
@@ -161,11 +161,11 @@ a:hover {
 	display: inline-block;
 }
 #title a {
-	color: teal;
+	color: #16a085;
 	margin-left: 1em;
 }
 .boroughTitle {
-	color: teal;
+	color: #16a085;
 	font-family: 'Flamenco';
 }
 .listLine {
@@ -174,7 +174,7 @@ a:hover {
 	padding-top: 1em;
 }
 .listLine h3 {
-	color: teal;
+	color: #16a085;
 	font-family: 'Flamenco';
 	margin: 0;
 }
